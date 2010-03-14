@@ -1,13 +1,16 @@
 package model;
-import java.util.ArrayList;
+
+import java.util.List;
 import java.util.Collections;
-import java.util.*;
+import java.util.Arrays;
+
 public class Round {
 	private List<Pair> pairs;
 	private Participant[] participants;		
 
 	public Round(Participant[] participants) {
 		this.participants = participants;
+		pairParticipants();
 	}	
 
 	private void pairParticipants() {
