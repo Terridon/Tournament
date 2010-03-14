@@ -1,4 +1,4 @@
-package model;
+sdfpackage model;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.*;
@@ -10,7 +10,7 @@ public class Round {
 		this.participants = participants;
 	}	
 
-	private Pair[] pairParticipants() {
+	private void pairParticipants() {
 		Collections.shuffle(Arrays.asList(participants));
 		for (int i = 0; i < participants.length; i++) {
 			//	(i + 1) % 2;
@@ -18,8 +18,6 @@ public class Round {
 			Pair pair = new Pair(participants[i], participants[i+1]);	
 			this.pairs.add(pair);
 		}
-
-		return pairs;
 	}	
 }
 
