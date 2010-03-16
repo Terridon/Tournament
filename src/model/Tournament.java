@@ -26,7 +26,7 @@ public class Tournament{
 	
 	public Round startRound() {
 		winningNumber++;
-		 List<Participant> p;
+		 List<Participant> p = new ArrayList<Participant>();
 			for(Participant participant : participants) {
 				if (participant.score() == winningNumber) {
 					p.add(participant);
