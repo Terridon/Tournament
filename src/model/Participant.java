@@ -12,10 +12,11 @@ public class Participant {
 		return name;	
 	}
 
-	public int point(int n){
-		return (point + n);
-	} 	
+	public void point(int n){
+		point= point + n;
+	} 
+
+	public int score() {
+		return point;
+	}
 }
-sdkjfsjkdlfhsldijfhks
-AAAAAAAAAAAAAAAAAA
-sdlfjksldfjkhsdjfkhskjhdfbsjhkdfbhk
