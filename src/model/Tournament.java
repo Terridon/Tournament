@@ -26,17 +26,13 @@ public class Tournament{
 	
 	public Round startRound() {
 		winningNumber++;
-		 List<Participant> p;
+		 List<Participant> p = new ArrayList<Participant>();
 			for(Participant participant : participants) {
 				if (participant.score() == winningNumber) {
 					p.add(participant);
 				}
 			}	
-
-		//skal iterere gennem listen og se hvem der har flest point.. 
-		//1 første gang..
-		//2 anden gang og fremdelse
-		Round nextRound = new Round(participants);
+		Round nextRound = new Round(p);
 		return nextRound;
 	}
 
