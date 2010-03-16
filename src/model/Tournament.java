@@ -19,7 +19,7 @@ public class Tournament{
 	}
 
 
-	public Round startRound() {
+	public Round startRound() throws Exception {
 		if (participants.size() > 0 && participants.size() % 2 == 0) {
 			if (started == false) {
 				Round firstRound = new Round(participants);
@@ -38,7 +38,9 @@ public class Tournament{
 				return nextRound;
 			}
 		}
-		throw exception "omg i needz equal numberz";
+		//TODO
+		//sørg for at tallet går op i 2^n inden metoden
+		throw new Exception("not an even number");
 	}
 
 }	
