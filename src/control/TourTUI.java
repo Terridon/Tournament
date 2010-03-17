@@ -12,7 +12,7 @@ public class TourTUI {
 
 	public void start() {
 		Tournament tour = new Tournament();
-		//userprompt somehow;
+		//TODO: userprompt somehow;
 		Participant player = new Participant("Dan");
 		tour.addParticipant(player);	
 	}
