@@ -4,7 +4,6 @@ import model.Tournament;
 import model.Participant;
 
 public class TourTUI {
-	private Scanner in;
 
 	public TourTUI(){
 
@@ -12,9 +11,15 @@ public class TourTUI {
 
 	public void start() {
 		Tournament tour = new Tournament();
-		//userprompt somehow;
-		Participant player = new Participant("Dan");
-		tour.addParticipant(player);	
+		Scanner input = new Scanner(System.in);
+		System.out.println("write player-name:");
+		String name = input.nextLine();
+		Participant player = new Participant(name);
+		tour.addParticipant(player);
+		//TODO 
+		//delete-option ved forkert navn
 	}
+
+
 
 }
