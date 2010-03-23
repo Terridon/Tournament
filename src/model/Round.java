@@ -10,7 +10,8 @@ public class Round {
 		this.participants = participants;
 		pairParticipants();
 	}       
-
+	//TODO evt implementere shuffle som selvstændig funktion 
+	//så man kan vælge hvem der skal spille mod hvem hvis man skulle ønske det.
 	private void pairParticipants() {
 		Collections.shuffle(participants);
 		for (int i = 0; i < participants.size(); i=i+2) {

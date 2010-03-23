@@ -1,5 +1,7 @@
 package model;
+
 import java.util.*;
+
 
 public class Tournament{
 	private List<Participant> participants;
